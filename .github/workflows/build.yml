@@ -45,7 +45,7 @@ jobs:
 
       - name: Get arch on Other
         if: "!(steps.gaw.conclusion == 'success')"
-        run: echo "ARCH=${uname -m}" >> $GITHUB_ENV
+        run: echo "ARCH=$(uname -m)" >> $GITHUB_ENV
         shell: bash
 
       - name: Install Rust
