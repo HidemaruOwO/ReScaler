@@ -21,7 +21,7 @@
     "bundle": {
       "active": true,
       "targets": "all",
-      "identifier": "com.hidemaruowo.rescaler",
+      "identifier": "net.hide0.rescaler",
       "icon": [
         "icons/32x32.png",
         "icons/128x128.png",
