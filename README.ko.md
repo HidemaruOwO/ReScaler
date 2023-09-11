@@ -4,7 +4,8 @@
 
 <!-- s;HidemaruOwO/Awesome-Repository;User/Repository;g -->
 
-[![Test CLI](https://github.com/HidemaruOwO/Awesome-Repository/actions/workflows/test.yml/badge.svg)](https://github.com/HidemaruOwO/Awesome-Repository/actions/workflows/test.yml)![最終コミット](https://img.shields.io/github/last-commit/HidemaruOwO/Awesome-Repository?style=flat-square)![リポジトリのスター](https://img.shields.io/github/stars/HidemaruOwO/Awesome-Repository?style=flat-square)![問題](https://img.shields.io/github/issues/HidemaruOwO/Awesome-Repository?style=flat-square)![オープンな問題](https://img.shields.io/github/issues-raw/HidemaruOwO/Awesome-Repository?style=flat-square)![バグの問題](https://img.shields.io/github/issues/HidemaruOwO/Awesome-Repository/bug?style=flat-square)
+[![Test CLI](https://github.com/HidemaruOwO/Awesome-Repository/actions/workflows/test.yml/badge.svg)](https://github.com/HidemaruOwO/Awesome-Repository/actions/workflows/test.yml)![最終コミット](https://img.shields.io/github/last-commit/HidemaruOwO/Awesome-Repository?style=flat-square)
+![リポジトリのスター](https://img.shields.io/github/stars/HidemaruOwO/Awesome-Repository?style=flat-square)![問題](https://img.shields.io/github/issues/HidemaruOwO/Awesome-Repository?style=flat-square)![オープンな問題](https://img.shields.io/github/issues-raw/HidemaruOwO/Awesome-Repository?style=flat-square)![バグの問題](https://img.shields.io/github/issues/HidemaruOwO/Awesome-Repository/bug?style=flat-square)
 
 ![image](https://github.com/HidemaruOwO/Awesome-Repository/assets/82384920/bf4ccddf-3eae-4fae-97f4-d2b59bec919f)
 
@@ -61,9 +62,9 @@ go build ../build.sh
 
 ## 저장소 도구 🔧
 
--   [ ] Dependabot 설정
+-   [x] Dependabot 설정
 -   [ ] CodeQL 설정
--   [ ] ChatGPT Code Review 설정
+-   [x] ChatGPT Code Review 설정
 
 <details>
 <summary>メモ</summary>
@@ -81,7 +82,7 @@ go build ../build.sh
 
 ## 기여자용 🤝
 
-이 프로젝트에 컨트리뷰트하는 경우는[컨트리 뷰트 가이드](docs/README.md)をお読みください。
+이 프로젝트에 컨트리뷰트하는 경우는[컨트리 뷰트 가이드](docs/README.md)를 읽으십시오.
 
 ## 참고 ✨
 
