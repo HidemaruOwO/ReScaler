@@ -60,7 +60,13 @@ jobs:
       - name: Install dependencies
         run: yarn install
 
-      - name: Build
+      - name: Build MacOS
+        id: bm
+        if: ${{ matrix.platform == 'macos-latest' }}
+        run: yarn tauri build --target universal-apple-darwin
+
+      - name: Build Other
+        if: "!(steps.bm.conclusion == 'success')"
         run: yarn tauri build
         # ./build.sh
 
@@ -70,8 +76,33 @@ jobs:
           name: Artifact-AppImage-${{ env.ARCH }}-${{ runner.os }}
           path: src-tauri/target/release/bundle/appimage/*.AppImage
 
-      - name: Artifact AppImage
+      - name: Artifact Deb
         uses: actions/upload-artifact@v3
         with:
-          name: Artifact-AppImage-${{ env.ARCH }}-${{ runner.os }}
-          path: src-tauri/target/release/bundle/appimage/*.AppImage
+          name: Artifact-deb-${{ env.ARCH }}-${{ runner.os }}
+          path: src-tauri/target/release/bundle/deb/*.deb
+ 
+      - name: Artifact Mac App
+        uses: actions/upload-artifact@v3
+        with:
+          name: Artifact-app-${{ runner.os }}
+          path: src-tauri/target/release/bundle/macos/*.app
+
+      - name: Artifact Dmg
+        uses: actions/upload-artifact@v3
+        with:
+          name: Artifact-dmg-${{ runner.os }}
+          path: src-tauri/target/release/bundle/dmg/*.dmg
+
+      - name: Artifact Nsis
+        uses: actions/upload-artifact@v3
+        with:
+          name: Artifact-nsis-${{ runner.os }}
+          path: src-tauri/target/release/bundle/nsis/*.exe
+
+      - name: Artifact Msi Installer
+        uses: actions/upload-artifact@v3
+        with:
+          name: Artifact-msi-${{ runner.os }}
+          path: src-tauri/target/release/bundle/msi/*.msi
+
