@@ -1,21 +1,21 @@
 <div align="center">
 
-# Awesome Repository 🎨
+# ReScaler 🌟
 
-<!-- s;HidemaruOwO/Awesome-Repository;User/Repository;g -->
+<!-- s;HidemaruOwO/ReScaler/g;User/Repository;g -->
 
-[![Test CLI](https://github.com/HidemaruOwO/Awesome-Repository/actions/workflows/test.yml/badge.svg)](https://github.com/HidemaruOwO/Awesome-Repository/actions/workflows/test.yml)
-![最終コミット](https://img.shields.io/github/last-commit/HidemaruOwO/Awesome-Repository?style=flat-square)
-![リポジトリのスター](https://img.shields.io/github/stars/HidemaruOwO/Awesome-Repository?style=flat-square)
-![問題](https://img.shields.io/github/issues/HidemaruOwO/Awesome-Repository?style=flat-square)
-![オープンな問題](https://img.shields.io/github/issues-raw/HidemaruOwO/Awesome-Repository?style=flat-square)
-![バグの問題](https://img.shields.io/github/issues/HidemaruOwO/Awesome-Repository/bug?style=flat-square)
+[![Test CLI](https://github.com/HidemaruOwO/ReScaler/actions/workflows/test.yml/badge.svg)](https://github.com/HidemaruOwO/ReScaler/actions/workflows/test.yml)
+![最終コミット](https://img.shields.io/github/last-commit/HidemaruOwO/ReScaler?style=flat-square)
+![リポジトリのスター](https://img.shields.io/github/stars/HidemaruOwO/ReScaler?style=flat-square)
+![問題](https://img.shields.io/github/issues/HidemaruOwO/ReScaler?style=flat-square)
+![オープンな問題](https://img.shields.io/github/issues-raw/HidemaruOwO/ReScaler?style=flat-square)
+![バグの問題](https://img.shields.io/github/issues/HidemaruOwO/ReScaler/bug?style=flat-square)
 
-![image](https://github.com/HidemaruOwO/Awesome-Repository/assets/82384920/bf4ccddf-3eae-4fae-97f4-d2b59bec919f)
+![image](https://user-images.githubusercontent.com/82384920/267009775-678efca7-4f05-4410-82bf-3186a2a9a0c9.png)
 
 ## なんだこれは？
 
-より素晴らしいリポジトリのテンプレートです。
+GANを使用して画像及び動画を高画質にしたまま拡大するGUIソフトウェアです。
 
 </div>
 
@@ -35,34 +35,21 @@
 
 ## Usage 💨
 
-このスクリプトを実行してください。
-
-```bash
-./run.sh
-```
+[Release](https://github.com/HidemaruOwO/ReScaler/releases/latest)もしくは[Actions](https://github.com/HidemaruOwO/ReScaler/actions/workflows/build.yml)からバイナリをダウンロードして、実行してください。
 
 ## Install 😊
 
 このスクリプトを実行してください。
 
 ```bash
-./install.sh
+yarn install
 ```
 
 ## Build 🔨
 
 ```bash
-git clone https://github.com/HidemaruOwO/Awesome-Repository.git
-cd Awesome-Repository.git
-mkdir build && cd build
-go build ../build.sh
+yarn tauri build
 ```
-
-## Dependencies 🪡
-
-このアプリを使用するには、以下のコマンドをパスに登録してください。
-
-- `git`
 
 ## Repository Tools 🔧
 
@@ -90,4 +77,6 @@ go build ../build.sh
 
 ## Reference ✨
 
-- [doremire/Awesome-README](https://github.com/doremire/Awesome-README)
+- [nihui/realcugan-ncnn-vulkan](https://github.com/nihui/realcugan-ncnn-vulkan)
+- [xinntao/Real-ESRGAN-ncnn-vulkan](https://github.com/xinntao/Real-ESRGAN-ncnn-vulkan)
+- [nihui/waifu2x-ncnn-vulkan](https://github.com/nihui/waifu2x-ncnn-vulkan)
