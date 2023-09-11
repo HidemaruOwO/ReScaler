@@ -10,11 +10,11 @@
 
 ## 这是什么？
 
-更好的存储库的模板。
+更多精彩的存储库模板。
 
 </div>
 
--   选择语言
+-   Select Language
 
 <table>
   <thead>
@@ -38,7 +38,7 @@
 
 ## 安装😊
 
-请运行这个脚本。
+このスクリプトを実行してください。
 
 ```bash
 ./install.sh
@@ -61,27 +61,27 @@ go build ../build.sh
 
 ## 存储库工具🔧
 
--   [ ] Dependabot 设置
--   [ ] 设置 CodeQL
--   [ ] ChatGPT Code Reviewのセットアップ
+-   [x] Dependabot 设置
+-   [ ] CodeQL 设置
+-   [x] 设置 ChatGPT 代码审查
 
 <details>
 <summary>メモ</summary>
 
 -   Dependabot 设置
-    -   `.github/dependabot.yml`的`package-ecosystem`将值设置为（例如npm，yarn，pip）
--   设置 CodeQL
-    -   <https://dev.classmethod.jp/articles/github-code-scanning/>
-    -   [支持的语言](https://codeql.github.com/docs/codeql-overview/supported-languages-and-frameworks/)
--   GPT PR 设置
+    -   `.github/dependabot.yml`的`package-ecosystem`将值设置为（例如 npm、yarn、pip）
+-   CodeQLのセットアップ
+    -   [HTTPS://Dev.class method.键盘/articles/GitHub-code-scanning/](https://dev.classmethod.jp/articles/github-code-scanning/)
+    -   [対応言語](https://codeql.github.com/docs/codeql-overview/supported-languages-and-frameworks/)
+-   设置 GPT PR
     -   存储库的`Secret Value`到`OPENAI_API_KEY`的设置
-    -   [HTTPS://GitHub.com/按此95/chat GPT-co的review/blob/卖弄/readme.急啊.面对](https://github.com/anc95/ChatGPT-CodeReview/blob/main/README.ja.md)
+    -   <https://github.com/anc95/ChatGPT-CodeReview/blob/main/README.ja.md>
 
 </details>
 
 ## 对于贡献者🤝
 
-为这个项目做出贡献[投稿指南](docs/README.md)请阅读。
+如果您想为这个项目做出贡献，[贡献巴特指南](docs/README.md)请阅读。
 
 ## 参考✨
 
