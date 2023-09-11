@@ -5,16 +5,9 @@
 
 version: 2
 updates:
-  - package-ecosystem: "yarn" # とにかく代入可能な値を検索してください
+  - package-ecosystem: "(Example: npm pip)" # とにかく代入可能な値を検索してください
     # https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file#package-ecosystem
     directory: "/" # Location of package manifests
-    schedule:
-      interval: "weekly"
-    target-branch: "develop"
-    open-pull-requests-limit: 10
-  - package-ecosystem: "cargo" # とにかく代入可能な値を検索してください
-    # https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file#package-ecosystem
-    directory: "/src-tauri" # Location of package manifests
     schedule:
       interval: "weekly"
     target-branch: "develop"
