@@ -4,18 +4,19 @@
 
 <!-- s;HidemaruOwO/ReScaler/g;User/Repository;g -->
 
-[![Test CLI](https://github.com/HidemaruOwO/ReScaler/g/actions/workflows/test.yml/badge.svg)](https://github.com/HidemaruOwO/ReScaler/g/actions/workflows/test.yml)
-![最終コミット](https://img.shields.io/github/last-commit/HidemaruOwO/ReScaler/g?style=flat-square)
-![リポジトリのスター](https://img.shields.io/github/stars/HidemaruOwO/ReScaler/g?style=flat-square)
-![問題](https://img.shields.io/github/issues/HidemaruOwO/ReScaler/g?style=flat-square)
-![オープンな問題](https://img.shields.io/github/issues-raw/HidemaruOwO/ReScaler/g?style=flat-square)
-![バグの問題](https://img.shields.io/github/issues/HidemaruOwO/ReScaler/g/bug?style=flat-square)
-
 ![image](https://github.com/HidemaruOwO/ReScaler/g/assets/82384920/bf4ccddf-3eae-4fae-97f4-d2b59bec919f)
+[![Test CLI](https://github.com/HidemaruOwO/ReScaler/actions/workflows/test.yml/badge.svg)](https://github.com/HidemaruOwO/ReScaler/actions/workflows/test.yml)
+![最終コミット](https://img.shields.io/github/last-commit/HidemaruOwO/ReScaler?style=flat-square)
+![リポジトリのスター](https://img.shields.io/github/stars/HidemaruOwO/ReScaler?style=flat-square)
+![問題](https://img.shields.io/github/issues/HidemaruOwO/ReScaler?style=flat-square)
+![オープンな問題](https://img.shields.io/github/issues-raw/HidemaruOwO/ReScaler?style=flat-square)
+![バグの問題](https://img.shields.io/github/issues/HidemaruOwO/ReScaler/bug?style=flat-square)
+
+![image](https://user-images.githubusercontent.com/82384920/267009775-678efca7-4f05-4410-82bf-3186a2a9a0c9.png)
 
 ## なんだこれは？
 
-より素晴らしいリポジトリのテンプレートです。
+GANを使用して画像及び動画を高画質にしたまま拡大するGUIソフトウェアです。
 
 </div>
 
