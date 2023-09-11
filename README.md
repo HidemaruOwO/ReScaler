@@ -66,9 +66,9 @@ go build ../build.sh
 
 ## Repository Tools 🔧
 
-- [ ] Depandabotのセットアップ
+- [x] Depandabotのセットアップ
 - [ ] CodeQLのセットアップ
-- [ ] ChatGPT Code Reviewのセットアップ
+- [x] ChatGPT Code Reviewのセットアップ
 
 <details>
 <summary>メモ</summary>
