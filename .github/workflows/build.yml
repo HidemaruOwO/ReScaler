@@ -4,7 +4,7 @@ on:
 
 jobs:
   build:
-    name: Release
+    name: Build and Artifact
     # runs-on: ubuntu-20.04
     permissions:
       contents: write
@@ -63,7 +63,9 @@ jobs:
       - name: Build MacOS
         id: bm
         if: ${{ matrix.platform == 'macos-latest' }}
-        run: yarn tauri build --target universal-apple-darwin
+        run: |
+          rustup target add aarch64-apple-darwin
+          yarn tauri build --target universal-apple-darwin
 
       - name: Build Other
         if: "!(steps.bm.conclusion == 'success')"
