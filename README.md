@@ -49,7 +49,7 @@ yarn install
 ## Build 🔨
 
 ```bash
-yarn build
+yarn tauri build
 ```
 
 ## Repository Tools 🔧
