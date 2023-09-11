@@ -4,7 +4,6 @@
 
 <!-- s;HidemaruOwO/ReScaler/g;User/Repository;g -->
 
-![image](https://github.com/HidemaruOwO/ReScaler/g/assets/82384920/bf4ccddf-3eae-4fae-97f4-d2b59bec919f)
 [![Test CLI](https://github.com/HidemaruOwO/ReScaler/actions/workflows/test.yml/badge.svg)](https://github.com/HidemaruOwO/ReScaler/actions/workflows/test.yml)
 ![最終コミット](https://img.shields.io/github/last-commit/HidemaruOwO/ReScaler?style=flat-square)
 ![リポジトリのスター](https://img.shields.io/github/stars/HidemaruOwO/ReScaler?style=flat-square)
