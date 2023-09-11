@@ -91,14 +91,14 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: Artifact-app-${{ runner.os }}
-          path: src-tauri/target/release/bundle/macos/*.app
+          path: src-tauri/target/universal-apple-darwin/release/bundle/macos/*.app
 
       - name: Artifact Dmg
         if: ${{ matrix.platform == 'macos-latest' }}
         uses: actions/upload-artifact@v3
         with:
           name: Artifact-dmg-${{ runner.os }}
-          path: src-tauri/target/release/bundle/dmg/*.dmg
+          path: src-tauri/target/universal-apple-darwin/release/bundle/dmg/*.dmg
 
       - name: Artifact Nsis
         if: ${{ matrix.platform == 'windows-latest' }}
