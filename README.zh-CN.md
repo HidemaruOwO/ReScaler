@@ -1,16 +1,16 @@
 <div align="center">
 
-# 很棒的存储库🎨
+# 重新缩放器🌟
 
-<!-- s;HidemaruOwO/Awesome-Repository;User/Repository;g -->
+<!-- s;HidemaruOwO/ReScaler/g;User/Repository;g -->
 
-[![Test CLI](https://github.com/HidemaruOwO/Awesome-Repository/actions/workflows/test.yml/badge.svg)](https://github.com/HidemaruOwO/Awesome-Repository/actions/workflows/test.yml)![最終コミット](https://img.shields.io/github/last-commit/HidemaruOwO/Awesome-Repository?style=flat-square)![リポジトリのスター](https://img.shields.io/github/stars/HidemaruOwO/Awesome-Repository?style=flat-square)![問題](https://img.shields.io/github/issues/HidemaruOwO/Awesome-Repository?style=flat-square)![オープンな問題](https://img.shields.io/github/issues-raw/HidemaruOwO/Awesome-Repository?style=flat-square)![バグの問題](https://img.shields.io/github/issues/HidemaruOwO/Awesome-Repository/bug?style=flat-square)
+[![Test CLI](https://github.com/HidemaruOwO/ReScaler/actions/workflows/test.yml/badge.svg)](https://github.com/HidemaruOwO/ReScaler/actions/workflows/test.yml)![最終コミット](https://img.shields.io/github/last-commit/HidemaruOwO/ReScaler?style=flat-square)![リポジトリのスター](https://img.shields.io/github/stars/HidemaruOwO/ReScaler?style=flat-square)![問題](https://img.shields.io/github/issues/HidemaruOwO/ReScaler?style=flat-square)![オープンな問題](https://img.shields.io/github/issues-raw/HidemaruOwO/ReScaler?style=flat-square)![バグの問題](https://img.shields.io/github/issues/HidemaruOwO/ReScaler/bug?style=flat-square)
 
-![image](https://github.com/HidemaruOwO/Awesome-Repository/assets/82384920/bf4ccddf-3eae-4fae-97f4-d2b59bec919f)
+![image](https://user-images.githubusercontent.com/82384920/267009775-678efca7-4f05-4410-82bf-3186a2a9a0c9.png)
 
 ## 这是什么？
 
-更好的存储库的模板。
+这是一款 GUI 软件，使用 GAN 放大图像和视频，同时保持高质量。
 
 </div>
 
@@ -30,50 +30,37 @@
 
 ## 用法💨
 
-请运行这个脚本。
-
-```bash
-./run.sh
-```
+[发布](https://github.com/HidemaruOwO/ReScaler/releases/latest)或者[行动](https://github.com/HidemaruOwO/ReScaler/actions/workflows/build.yml)下载二进制文件并运行它。
 
 ## 安装😊
 
 请运行这个脚本。
 
 ```bash
-./install.sh
+yarn install
 ```
 
 ## 构建🔨
 
 ```bash
-git clone https://github.com/HidemaruOwO/Awesome-Repository.git
-cd Awesome-Repository.git
-mkdir build && cd build
-go build ../build.sh
+yarn tauri build
 ```
-
-## 依赖关系🪡
-
-要使用此应用程序，请在您的路径中注册以下命令。
-
--   `git`
 
 ## 存储库工具🔧
 
--   [ ] Dependabot 设置
--   [ ] 设置 CodeQL
--   [ ] ChatGPT Code Reviewのセットアップ
+-   [x] Dependabot 设置
+-   [ ] CodeQL 设置
+-   [x] 设置 ChatGPT 代码审查
 
 <details>
 <summary>メモ</summary>
 
 -   Dependabot 设置
-    -   `.github/dependabot.yml`的`package-ecosystem`将值设置为（例如npm，yarn，pip）
--   设置 CodeQL
-    -   <https://dev.classmethod.jp/articles/github-code-scanning/>
+    -   `.github/dependabot.yml`的`package-ecosystem`将值设置为（例如 npm、yarn、pip）
+-   CodeQL 设置
+    -   [HTTPS://Dev.class method.键盘/articles/GitHub-code-scanning/](https://dev.classmethod.jp/articles/github-code-scanning/)
     -   [支持的语言](https://codeql.github.com/docs/codeql-overview/supported-languages-and-frameworks/)
--   GPT PR 设置
+-   设置 GPT PR
     -   存储库的`Secret Value`到`OPENAI_API_KEY`的设置
     -   [HTTPS://GitHub.com/按此95/chat GPT-co的review/blob/卖弄/readme.急啊.面对](https://github.com/anc95/ChatGPT-CodeReview/blob/main/README.ja.md)
 
@@ -81,8 +68,10 @@ go build ../build.sh
 
 ## 对于贡献者🤝
 
-为这个项目做出贡献[投稿指南](docs/README.md)请阅读。
+如果您想为这个项目做出贡献，[贡献巴特指南](docs/README.md)请阅读。
 
 ## 参考✨
 
--   [doremire/Awesome-自述文件](https://github.com/doremire/Awesome-README)
+-   [nihui/realcugan-ncnn-vulkan](https://github.com/nihui/realcugan-ncnn-vulkan)
+-   [xinntao/Real-ESRGAN-ncnn-vulkan](https://github.com/xinntao/Real-ESRGAN-ncnn-vulkan)
+-   [nihui/waifu2x-ncnn-vulkan](https://github.com/nihui/waifu2x-ncnn-vulkan)
