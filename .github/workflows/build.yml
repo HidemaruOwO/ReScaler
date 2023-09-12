@@ -41,11 +41,11 @@ jobs:
       - name: Get arch on Windows
         id: gaw
         if: ${{ matrix.platform == 'windows-latest' }}
-        run: echo "ARCH=x86_64" >> $GITHUB_ENV
+        run: wmic OS get OSArchitecture /value >> $env:GITHUB_ENV
 
       - name: Get arch on Other
         if: "!(steps.gaw.conclusion == 'success')"
-        run: echo "ARCH=$(uname -m)" >> $GITHUB_ENV
+        run: echo "OSArchitecture=$(uname -m)" >> $GITHUB_ENV
         shell: bash
 
       - name: Install Rust
@@ -76,15 +76,17 @@ jobs:
         if: ${{ matrix.platform == 'ubuntu-20.04' }}
         uses: actions/upload-artifact@v3
         with:
-          name: Artifact-AppImage-${{ env.ARCH }}-${{ runner.os }}
+          name: Artifact-AppImage-${{ env.OSArchitecture }}-${{ runner.os }}
           path: src-tauri/target/release/bundle/appimage/*.AppImage
+          if-no-files-found: ignore
 
       - name: Artifact Deb
         if: ${{ matrix.platform == 'ubuntu-20.04' }}
         uses: actions/upload-artifact@v3
         with:
-          name: Artifact-deb-${{ env.ARCH }}-${{ runner.os }}
+          name: Artifact-deb-${{ env.OSArchitecture }}-${{ runner.os }}
           path: src-tauri/target/release/bundle/deb/*.deb
+          if-no-files-found: ignore
  
       - name: Artifact Mac App
         if: ${{ matrix.platform == 'macos-latest' }}
@@ -92,6 +94,7 @@ jobs:
         with:
           name: Artifact-app-universal-${{ runner.os }}
           path: src-tauri/target/universal-apple-darwin/release/bundle/macos/*.app
+          if-no-files-found: ignore
 
       - name: Artifact Dmg
         if: ${{ matrix.platform == 'macos-latest' }}
@@ -99,18 +102,20 @@ jobs:
         with:
           name: Artifact-dmg-universal-${{ runner.os }}
           path: src-tauri/target/universal-apple-darwin/release/bundle/dmg/*.dmg
+          if-no-files-found: ignore
 
       - name: Artifact Nsis
         if: ${{ matrix.platform == 'windows-latest' }}
         uses: actions/upload-artifact@v3
         with:
-          name: Artifact-nsis-${{ env.ARCH }}-${{ runner.os }}
+          name: Artifact-nsis-${{ env.OSArchitecture }}-${{ runner.os }}
           path: src-tauri/target/release/bundle/nsis/*.exe
+          if-no-files-found: ignore
 
       - name: Artifact Msi Installer
         if: ${{ matrix.platform == 'windows-latest' }}
         uses: actions/upload-artifact@v3
         with:
-          name: Artifact-msi-${{ env.ARCH }}-${{ runner.os }}
+          name: Artifact-msi-${{ env.OSArchitecture }}-${{ runner.os }}
           path: src-tauri/target/release/bundle/msi/*.msi
-
+          if-no-files-found: ignore
